@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environment
+.venv/
+
+# Django
+*.log
+
+# Environment/secrets
+.env
+
+# IDE
+.idea/
+
+# Local-only data pipeline utility (not part of the app)
+utils/load_stations_to_db.py
+
+# Generated/intermediate data pipeline artifacts (station data ships pre-seeded
+# in db.sqlite3 instead - these CSVs are only needed if regenerating from scratch)
+utils/fuel_prices_cleaned.csv
+utils/fuel_prices_resolved_details.csv
+utils/fuel_prices_resolved.csv
+
+# Stray local run artifacts
+result.json
+run_err.txt
+run_log.txt
+run_pid.txt
